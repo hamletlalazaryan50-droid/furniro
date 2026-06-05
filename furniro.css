@@ -197,6 +197,9 @@ header {
       border: none;
       font-weight: 700;
       cursor: pointer;
+      font-family: "Popins", sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
 
       @media screen and (max-width: 782px) {
         width: 150px;
@@ -454,6 +457,267 @@ main {
       @media screen and (max-width: 800px) {
         width: 200px;
         height: 37px;
+      }
+    }
+  }
+
+  .main-3 {
+    width: 100%;
+    overflow: hidden;
+    height: 670px;
+    gap: 24px;
+    background-color: var(--main-container-color);
+    display: flex;
+    margin-top: 69px;
+
+    @media screen and (max-width: 1384px) {
+      flex-wrap: wrap;
+      height: auto;
+      padding-bottom: 69px;
+      justify-content: center;
+      text-align: center;
+    }
+    .main-3-text {
+      padding-top: 223px;
+      padding-left: 100px;
+      min-width: 500px;
+      margin-right: 42px;
+
+      @media screen and (max-width: 494px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1027px) {
+        text-align: center;
+        margin-right: 0%;
+        padding: 50px 20px 0 20px;
+        min-width: 0;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1026px) and (max-width: 1168px) {
+        padding-top: 80px;
+      }
+      h1 {
+        font-family: "Popins", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.2;
+        margin: 0%;
+        padding: 0%;
+
+        @media screen and (max-width: 494px) {
+          font-weight: 600;
+          font-size: 24px;
+        }
+        @media screen and (max-width: 371px) {
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+
+      p {
+        font-family: "Popins", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #616161;
+        margin: 0%;
+        padding: 0%;
+        padding-top: 7px;
+        padding-bottom: 25px;
+
+        @media screen and (max-width: 494px) {
+          font-weight: 400;
+          font-size: 10px;
+        }
+      }
+
+      button {
+        width: 176px;
+        height: 48px;
+        background-color: var(--gold);
+        color: #ffffff;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+
+        font-family: "Popins", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+
+        @media screen and (max-width: 494px) {
+          font-weight: 400;
+          font-size: 12px;
+          width: 120px;
+          height: 36px;
+        }
+      }
+    }
+
+    .picture-with-description {
+      position: relative;
+      flex-shrink: 0;
+      width: 404px;
+      margin-top: 44px;
+
+      @media screen and (max-width: 1169px) {
+        margin-top: 5px;
+      }
+
+      @media screen and (max-width: 390px) {
+        width: 100%;
+
+        img {
+          height: auto;
+          width: auto;
+        }
+      }
+      img {
+        width: 100%;
+        height: 582px;
+        object-fit: cover;
+      }
+
+      .cont {
+        background-color: rgba(255, 255, 255, 0.72);
+        position: absolute;
+        bottom: 110px;
+        left: 24px;
+        padding: 24px;
+        .room-number {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: #616161;
+
+          span {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        button {
+          position: absolute;
+          display: flex;
+          bottom: 0;
+          right: -48px;
+          width: 48px;
+          height: 48px;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--gold);
+          border: none;
+
+          svg {
+            fill: none;
+            stroke: white;
+          }
+        }
+
+        .inner-peace {
+          font-family: "Popins", sans-serif;
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 1.2;
+          color: #3a3a3a;
+        }
+      }
+    }
+
+    .picture-with-slides {
+      position: relative;
+      width: 372px;
+      flex-shrink: 0;
+      margin-top: 44px;
+
+      @media screen and (max-width: 1169px) {
+        margin-top: 5px;
+      }
+
+      @media screen and (max-width: 390px) {
+        flex-shrink: 1;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 486px;
+        object-fit: cover;
+      }
+
+      .circles {
+        display: flex;
+        gap: 18px;
+        margin-top: 40px;
+        margin-left: 5px;
+
+        @media screen and (max-width: 396px) {
+          margin-left: 15px;
+        }
+
+        .circle-yelow {
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          background-color: #b88e2f;
+          outline: 1px solid var(--gold);
+          outline-offset: 8px;
+          cursor: pointer;
+        }
+
+        .circle {
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          background-color: #d8d8d8;
+          cursor: pointer;
+        }
+      }
+
+      button {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: var(--gold);
+        background-color: white;
+
+        bottom: 351px;
+        left: 345px;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+
+        @media screen and (max-width: 1384px) {
+          bottom: 251px;
+        }
+      }
+    }
+
+    .right-picture {
+      display: flex;
+      height: 486px;
+      margin-top: 44px;
+
+      @media screen and (max-width: 1169px) {
+        margin-top: 10px;
+      }
+
+      @media screen and (max-width: 390px) {
+        flex-shrink: 1;
+        width: 100%;
+      }
+
+      img {
+        width: 372px;
+        height: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
       }
     }
   }
