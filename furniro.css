@@ -965,7 +965,7 @@ footer {
         margin-top: 35px;
         font-family: "Popins", sans-serif;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
 
         @media screen and (max-width: 768px) {
           text-align: center;
