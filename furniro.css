@@ -850,6 +850,7 @@ footer {
         font-weight: 800;
         font-size: 24px;
         margin-bottom: 30px;
+        cursor: pointer;
       }
 
       p {
