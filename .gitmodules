@@ -1,0 +1,3 @@
+[submodule "furniro"]
+	path = furniro
+	url = https://github.com/hamletlalazaryan50-droid/furniro.git
