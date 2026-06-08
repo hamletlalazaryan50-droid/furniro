@@ -204,3 +204,224 @@
     }
   }
 }
+
+.shop-main {
+  h1 {
+    text-align: center;
+    margin-top: 56px;
+    font-family: "Popins", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .products {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+    @media screen and (max-width: 1126px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 535px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+
+    h3 {
+      margin: 0;
+      padding-top: 16px;
+      padding-left: 16px;
+      font-family: "Popins", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .product-1,
+    .product-2,
+    .product-3,
+    .product-4,
+    .product-6,
+    .product-7,
+    .product-8 {
+      position: relative;
+    }
+
+    .product-4,
+    .product-6,
+    .product-8 {
+      .discount {
+        background-color: #2ec1ac;
+      }
+    }
+
+    .discount {
+      position: absolute;
+      top: 24px;
+      right: 25px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #e97171;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(58, 58, 58, 0.72);
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin-top: 24px;
+
+        svg {
+          fill: #ffffff;
+          cursor: pointer;
+        }
+
+        span {
+          color: #ffffff;
+          font-family: "Popins", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+
+      button {
+        display: flex;
+        width: 202px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        color: var(--gold);
+        background-color: var(--white);
+        font-family: "Popins", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+
+    p {
+      padding-top: 16px;
+      padding-left: 16px;
+      margin: 0;
+      font-family: "Popins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #898989;
+
+      @media screen and (max-width: 1126px) {
+        font-size: 13px;
+      }
+    }
+
+    del {
+      font-size: 16px;
+      color: #b0b0b0;
+      font-weight: 400;
+      margin-left: 15px;
+
+      @media screen and (max-width: 1126px) {
+        font-size: 13px;
+      }
+    }
+
+    .price {
+      margin: 0;
+      padding-top: 8px;
+      color: black;
+      font-family: "Popins", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+
+      @media screen and (max-width: 1126px) {
+        font-size: 15px;
+      }
+    }
+
+    .product-price {
+      background-color: var(--product-background-color);
+      height: 145px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .main-btns {
+    display: flex;
+    gap: 38px;
+    justify-content: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+
+    .btn-main-1 {
+      button {
+        width: 60px;
+        height: 60px;
+        background-color: var(--gold);
+        border: none;
+        border-radius: 10px;
+        color: var(--white);
+        font-family: "Popins", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .btn-main {
+      button {
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        background-color: #f9f1e7;
+        font-family: "Popins", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .btn-next {
+      button {
+        width: 98px;
+        height: 60px;
+        border: none;
+        border-radius: 10px;
+        background-color: #f9f1e7;
+        font-family: "Popins", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}

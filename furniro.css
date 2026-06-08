@@ -453,6 +453,7 @@ main {
       background: transparent;
       align-items: center;
       color: var(--gold);
+      cursor: pointer;
 
       @media screen and (max-width: 800px) {
         width: 200px;
@@ -611,6 +612,7 @@ main {
           justify-content: center;
           background-color: var(--gold);
           border: none;
+          cursor: pointer;
 
           svg {
             fill: none;
@@ -692,6 +694,7 @@ main {
         border: none;
         color: var(--gold);
         background-color: white;
+        cursor: pointer;
 
         bottom: 351px;
         left: 345px;
