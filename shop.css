@@ -81,6 +81,7 @@
   min-height: 100px;
   flex-wrap: wrap;
   gap: 20px;
+  overflow: hidden;
 
   @media screen and (max-width: 1130px) {
     padding: 20px 50px;
@@ -206,6 +207,7 @@
 }
 
 .shop-main {
+  overflow: hidden;
   h1 {
     text-align: center;
     margin-top: 56px;
@@ -421,6 +423,48 @@
         font-weight: 400;
         font-size: 20px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+.shop-footer {
+  overflow: hidden;
+  .shop-footer-section-1 {
+    background-color: #faf3ea;
+    margin-top: 83px;
+    min-height: 270px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-items {
+      display: flex;
+      gap: 65px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        h3 {
+          font-family: "Popins", sans-serif;
+          font-weight: 600;
+          font-size: 25px;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+          padding-top: 7px;
+          font-family: "Popins", sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          color: #898989;
+        }
       }
     }
   }
