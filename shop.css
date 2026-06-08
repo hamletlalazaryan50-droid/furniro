@@ -16,29 +16,29 @@
 }
 
 .shop-header {
-  min-height: 316px; 
-  position: relative; 
+  min-height: 316px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  
+
   .header-section-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+
     img {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover; 
-      z-index: -1; 
-      filter: blur(6px); 
-      opacity: 0.6; 
+      object-fit: cover;
+      z-index: -1;
+      filter: blur(6px);
+      opacity: 0.6;
     }
 
     .shop {
@@ -46,7 +46,7 @@
       flex-direction: column;
       align-items: center;
       z-index: 1;
-      
+
       p:first-child {
         font-family: "Poppins", sans-serif;
         font-size: 48px;
@@ -54,11 +54,11 @@
         margin: 0;
         color: black;
 
-        @media screen and (max-width:600px) {
-            font-size: 36px;
+        @media screen and (max-width: 600px) {
+          font-size: 36px;
         }
       }
-      
+
       p:last-child {
         font-family: "Poppins", sans-serif;
         font-size: 16px;
@@ -66,7 +66,7 @@
         margin-top: 5px;
         display: flex;
         align-items: center;
-        gap: 10px; 
+        gap: 10px;
       }
     }
   }
