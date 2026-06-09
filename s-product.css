@@ -15,10 +15,6 @@
   overflow: hidden;
 }
 
-body {
-  overflow: hidden;
-}
-
 nav {
   width: 100%;
   height: 100px;
@@ -909,7 +905,7 @@ footer {
 .shopping-cart {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -500px;
   height: 100vh;
   background-color: var(--white);
   z-index: 1000;
@@ -919,6 +915,7 @@ footer {
   box-sizing: border-box;
   width: 417px;
   padding: 28px 27px;
+
   .header {
     display: flex;
     align-items: center;
@@ -1085,6 +1082,10 @@ footer {
   }
 }
 
+.shopping-cart.active {
+  right: 0;
+}
+
 .cart-overlay {
   position: fixed;
   top: 0;
@@ -1093,4 +1094,12 @@ footer {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.cart-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
