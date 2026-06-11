@@ -166,3 +166,307 @@ header {
     }
   }
 }
+
+main {
+  .header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 98px;
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #9f9f9f;
+      margin: 8px;
+    }
+  }
+
+  .body {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+
+    @media screen and (max-width: 994px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .left-section {
+      padding-top: 82px;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+
+      @media screen and (max-width: 994px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 736px) {
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      p {
+        max-width: 212px;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .right-section {
+      padding-top: 133px;
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      input {
+        width: 528px;
+        height: 75px;
+        border-radius: 10px;
+        border: 1px solid #9f9f9f;
+        padding: 0 31px;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        box-sizing: border-box;
+        @media screen and (max-width: 608px) {
+          width: 100%;
+        }
+      }
+
+      .message {
+        input {
+          height: 120px;
+        }
+      }
+
+      button {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 49px;
+        width: 237px;
+        height: 55px;
+        color: var(--white);
+        background-color: var(--gold);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+footer {
+  overflow: hidden;
+  .shop-footer-section-1 {
+    background-color: #faf3ea;
+    margin-top: 83px;
+    min-height: 270px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-items {
+      display: flex;
+      gap: 65px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        h3 {
+          font-family: "Popins", sans-serif;
+          font-weight: 600;
+          font-size: 25px;
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+          padding-top: 7px;
+          font-family: "Popins", sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          color: #898989;
+        }
+      }
+    }
+  }
+
+  .shop-footer-section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 48px 100px 30px 100px;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media screen and (max-width: 1024px) {
+      padding: 40px 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 40px;
+    }
+
+    .left-section {
+      max-width: 300px;
+
+      h2 {
+        font-family: "Popins", sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        margin-bottom: 30px;
+        cursor: pointer;
+      }
+
+      p {
+        font-family: "Popins", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #9f9f9f;
+        line-height: 1.5;
+      }
+    }
+
+    .right-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+
+      @media screen and (max-width: 1024px) {
+        gap: 50px;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .links,
+      .Help {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          color: #9f9f9f;
+          font-family: "Popins", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          margin-bottom: 30px;
+          margin-top: 0;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+          gap: 30px;
+          list-style: none;
+
+          li {
+            a {
+              text-decoration: none;
+              color: black;
+              font-family: "Popins", sans-serif;
+              font-weight: 500;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .Newsletter {
+        font-family: "Popins", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+
+        p {
+          color: #9f9f9f;
+          margin-bottom: 30px;
+          margin-top: 0;
+        }
+
+        input {
+          border: none;
+          border-bottom: 1px solid black;
+          outline: none;
+          padding-bottom: 5px;
+          margin-right: 15px;
+          font-family: "Popins", sans-serif;
+          font-size: 14px;
+        }
+
+        span {
+          color: black;
+          text-decoration: underline;
+          cursor: pointer;
+          font-weight: 600;
+        }
+
+        @media screen and (max-width: 480px) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+
+          input {
+            width: 100%;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .rights {
+      width: 100%;
+      margin-top: 30px;
+
+      hr {
+        border: none;
+        border-top: 1px solid #d9d9d9;
+      }
+
+      p {
+        margin-top: 35px;
+        font-family: "Popins", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+
+        @media screen and (max-width: 768px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
