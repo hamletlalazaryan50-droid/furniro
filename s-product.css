@@ -481,6 +481,7 @@ main {
       justify-content: center;
       gap: 52px;
       flex-wrap: wrap;
+      cursor: pointer;
 
       @media screen and (max-width: 661px) {
         gap: 30px;
