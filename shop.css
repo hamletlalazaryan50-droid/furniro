@@ -15,6 +15,14 @@
   overflow: hidden;
 }
 
+nav {
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+}
+
 .shop-header {
   min-height: 316px;
   position: relative;
@@ -226,6 +234,14 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
 
+    a {
+      text-decoration: none;
+    }
+
+    h3 {
+      color: black;
+    }
+
     @media screen and (max-width: 1126px) {
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
@@ -313,6 +329,11 @@
           font-weight: 600;
           font-size: 16px;
           cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
         }
       }
 
@@ -327,6 +348,7 @@
         font-family: "Popins", sans-serif;
         font-weight: 600;
         font-size: 16px;
+        cursor: pointer;
       }
     }
 

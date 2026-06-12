@@ -403,6 +403,11 @@ header {
           font-size: 20px;
           cursor: pointer;
 
+          a {
+            text-decoration: none;
+            color: #000000;
+          }
+
           @media screen and (max-width: 480px) {
             width: 100%;
           }
@@ -576,6 +581,14 @@ main {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 32px;
+
+      a {
+        text-decoration: none;
+      }
+
+      h3 {
+        color: black;
+      }
 
       @media screen and (max-width: 1126px) {
         grid-template-columns: repeat(3, 1fr);
@@ -1108,4 +1121,13 @@ footer {
 .cart-overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.shopping-cart {
+  .btns {
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
 }
