@@ -421,6 +421,7 @@ header {
           justify-content: space-between;
           border: 1px solid #9f9f9f;
           padding: 0 15px;
+          color: #000000;
 
           .first,
           .third {

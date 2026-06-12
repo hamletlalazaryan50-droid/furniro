@@ -432,23 +432,20 @@ main {
           }
         }
 
-        .btn {
+        button {
           display: flex;
           margin-top: 39px;
           width: 100%;
           justify-content: center;
           align-items: center;
-
-          button {
-            width: 318px;
-            height: 64px;
-            border-radius: 15px;
-            background-color: transparent;
-            font-size: 20px;
-            font-weight: 400;
-            font-family: "Poppins", sans-serif;
-            cursor: pointer;
-          }
+          width: 318px;
+          height: 64px;
+          border-radius: 15px;
+          background-color: transparent;
+          font-size: 20px;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+          cursor: pointer;
         }
       }
     }
