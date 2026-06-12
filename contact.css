@@ -173,6 +173,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 98px;
+    overflow: hidden;
 
     h1 {
       font-family: "Poppins", sans-serif;
@@ -194,6 +195,10 @@ main {
     display: flex;
     justify-content: center;
     gap: 160px;
+
+    @media screen and(min-width:1650px) {
+      gap: 320px;
+    }
 
     @media screen and (max-width: 994px) {
       flex-direction: column;
@@ -243,7 +248,8 @@ main {
       }
 
       input {
-        width: 528px;
+        width: 100%;
+        max-width: 528px;
         height: 75px;
         border-radius: 10px;
         border: 1px solid #9f9f9f;
@@ -252,9 +258,6 @@ main {
         font-size: 16px;
         font-weight: 400;
         box-sizing: border-box;
-        @media screen and (max-width: 608px) {
-          width: 100%;
-        }
       }
 
       .message {

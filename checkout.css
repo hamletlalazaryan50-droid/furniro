@@ -171,6 +171,11 @@ main {
   display: flex;
   overflow: hidden;
 
+  @media screen and (min-width: 2000px) {
+    justify-content: center;
+    gap: 160px;
+  }
+
   @media screen and (max-width: 1265px) {
     flex-wrap: wrap;
   }

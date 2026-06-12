@@ -173,6 +173,11 @@ main {
   margin-left: 50px;
   justify-content: space-between;
 
+  @media screen and (min-width: 1700px) {
+    justify-content: center;
+    gap: 300px;
+  }
+
   @media screen and (max-width: 1269px) {
     flex-direction: column;
     gap: 30px;

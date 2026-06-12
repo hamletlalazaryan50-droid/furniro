@@ -288,6 +288,10 @@ main {
       grid-template-columns: repeat(4, 1fr);
       gap: 32px;
 
+      @media screen and (min-width: 2031px) {
+        column-gap: 100px;
+      }
+
       @media screen and (max-width: 1126px) {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -321,6 +325,7 @@ main {
       .product-7,
       .product-8 {
         position: relative;
+        cursor: pointer;
       }
 
       .product-4,
