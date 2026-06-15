@@ -438,7 +438,7 @@ main {
           width: 100%;
           justify-content: center;
           align-items: center;
-          width: 318px;
+          max-width: 318px;
           height: 64px;
           border-radius: 15px;
           background-color: transparent;
@@ -446,6 +446,8 @@ main {
           font-weight: 400;
           font-family: "Poppins", sans-serif;
           cursor: pointer;
+          border: 1px solid black;
+          color: black;
         }
       }
     }
