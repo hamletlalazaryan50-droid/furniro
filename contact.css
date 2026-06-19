@@ -247,6 +247,10 @@ main {
     .right-section {
       padding-top: 133px;
 
+      @media screen and (max-width: 994px) {
+        padding-top: 0;
+      }
+
       p {
         font-family: "Poppins", sans-serif;
         font-size: 16px;
