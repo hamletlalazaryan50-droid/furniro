@@ -230,24 +230,39 @@
         </div>
 
         <div class="right-section">
-          <div class="name">
-            <p>Your name</p>
-            <input type="text" placeholder="Abc" />
-          </div>
-          <div class="email">
-            <p>Email address</p>
-            <input type="email" placeholder="Abc@def.com" />
-          </div>
-          <div class="subject">
-            <p class="paragraph">Subject</p>
-            <input type="text" placeholder="This is an optional" />
-          </div>
-          <div class="message">
-            <p>Message</p>
-            <input type="text" placeholder="Hi! i’d like to ask about" />
-          </div>
+          <form>
+            <div class="name">
+              <label for="user-name">Your name</label>
+              <input type="text" id="user-name" placeholder="Abc" required />
+            </div>
+            <div class="email">
+              <label for="user-email">Email Address</label>
+              <input
+                type="email"
+                id="user-email"
+                placeholder="Abc@def.com"
+                required
+              />
+            </div>
+            <div class="subject">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="This is an optional"
+              />
+            </div>
+            <div class="message">
+              <label for="message">Message</label>
+              <input
+                type="text"
+                id="message"
+                placeholder="Hi! i’d like to ask about"
+              />
+            </div>
 
-          <button>Submit</button>
+            <button>Submit</button>
+          </form>
         </div>
       </div>
     </main>
