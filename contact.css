@@ -82,6 +82,9 @@ nav {
         }
         .mobile-btn {
           display: flex;
+          background: none;
+          border: none;
+          outline: none;
         }
       }
     }
@@ -429,7 +432,20 @@ footer {
           margin-bottom: 30px;
           margin-top: 0;
         }
-
+        .newsletter-form {
+          display: flex;
+          align-items: center;
+        }
+        .text {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
         input {
           border: none;
           border-bottom: 1px solid black;
@@ -439,20 +455,24 @@ footer {
           font-family: "Popins", sans-serif;
           font-size: 14px;
         }
-
-        span {
+        button {
+          background: none;
+          border: none;
+          padding: 0;
           color: black;
           text-decoration: underline;
           cursor: pointer;
           font-weight: 600;
+          font-family: "Popins", sans-serif;
+          font-size: 16px;
         }
 
         @media screen and (max-width: 480px) {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 20px;
-
+          .newsletter-form {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+          }
           input {
             width: 100%;
             margin-right: 0;

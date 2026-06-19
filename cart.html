@@ -82,7 +82,11 @@
             />
           </svg>
 
-          <div class="mobile-btn">
+          <button
+            class="mobile-btn"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
             <svg viewBox="0 0 24 24" width="28" height="28">
               <path
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +97,7 @@
                 fill="#b88e2f"
               />
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </nav>
@@ -316,8 +320,18 @@
 
           <div class="Newsletter">
             <p>Newsletter</p>
-            <input type="email" placeholder="Enter Your Email Address" />
-            <span>SUBSCRIBE</span>
+            <form class="newsletter-form">
+              <label for="newsletter-email" class="text"
+                >Enter Your Email Address</label
+              >
+              <input
+                type="email"
+                id="newsletter-email"
+                placeholder="Enter Your Email Address"
+                required
+              />
+              <button type="submit">SUBSCRIBE</button>
+            </form>
           </div>
         </div>
         <div class="rights">
