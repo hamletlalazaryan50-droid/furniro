@@ -127,29 +127,19 @@ header {
     .navigation {
       display: flex;
       align-items: center;
-      gap: 25px;
-
-      @media screen and (max-width: 768px) {
-        gap: 10px;
-      }
+      gap: clamp(10px, 5vw, 25px);
 
       .item {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
-        font-size: 16px;
+        font-size: clamp(14px, 5vw, 16px);
         color: #9f9f9f;
-        @media screen and (max-width: 768px) {
-          font-size: 14px;
-        }
       }
 
       .item-name {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
-        font-size: 16px;
-        @media screen and (max-width: 768px) {
-          font-size: 14px;
-        }
+        font-size: clamp(14px, 5vw, 16px);
       }
     }
   }
@@ -176,23 +166,21 @@ header {
 
     .left-section {
       display: flex;
-      gap: 32px;
+      gap: clamp(15px, 5vw, 32px);
       flex: 1;
 
       @media screen and (max-width: 850px) {
-        flex-direction: column-reverse; /* ՍԱ ԿԱՐԵՎՈՐ Է: Փոքր նկարները գնում են մեծի տակ */
-        gap: 15px;
+        flex-direction: column-reverse;
       }
 
       .mini-pictures {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: clamp(10px, 5vw, 32px);
 
         @media screen and (max-width: 850px) {
           flex-direction: row;
           justify-content: space-between;
-          gap: 10px;
         }
 
         .item {
@@ -251,24 +239,18 @@ header {
       flex: 1;
       h1 {
         font-family: "Poppins", sans-serif;
-        font-size: 42px;
+        font-size: clamp(32px, 5vw, 42px);
         font-weight: 400;
         margin: 0;
         padding: 0;
-        @media screen and (max-width: 768px) {
-          font-size: 32px;
-        }
       }
 
       .price {
         font-family: "Poppins", sans-serif;
-        font-size: 24px;
+        font-size: clamp(20px, 5vw, 24px);
         font-weight: 500;
         color: #9f9f9f;
         margin-bottom: 18px;
-        @media screen and (max-width: 768px) {
-          font-size: 20px;
-        }
       }
 
       .review {
@@ -302,11 +284,6 @@ header {
         width: 100%;
         color: black;
         margin-top: 18px;
-
-        @media screen and (max-width: 850px) {
-          width: 100%;
-          line-height: 1.5;
-        }
       }
 
       .size {
@@ -490,13 +467,9 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 52px;
+      gap: clamp(30px, 5vw, 52px);
       flex-wrap: wrap;
       cursor: pointer;
-
-      @media screen and (max-width: 661px) {
-        gap: 30px;
-      }
 
       p {
         font-family: "Poppins", sans-serif;
@@ -526,11 +499,7 @@ main {
         display: flex;
         flex-direction: column;
         gap: 25px;
-        margin-top: 37px;
-
-        @media screen and (max-width: 661px) {
-          margin-top: 25px;
-        }
+        margin-top: clamp(25px, 5vw, 37px);
         p {
           font-family: "Poppins", sans-serif;
           font-weight: 400;
@@ -603,12 +572,10 @@ main {
 
       @media screen and (max-width: 800px) {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
       }
 
       @media screen and (max-width: 535px) {
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
       }
 
       h3 {
@@ -818,15 +785,10 @@ footer {
     .right-section {
       display: flex;
       flex-wrap: wrap;
-      gap: 100px;
-
-      @media screen and (max-width: 1024px) {
-        gap: 50px;
-      }
+      gap: clamp(40px, 5vw, 100px);
 
       @media screen and (max-width: 768px) {
         flex-direction: column;
-        gap: 40px;
       }
 
       .links,

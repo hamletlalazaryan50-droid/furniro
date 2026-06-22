@@ -146,7 +146,7 @@ header {
     background: var(--header-container-color);
     width: 100%;
     max-width: 643px;
-    padding: 62px 43px 37px 39px;
+    padding: 62px 4vw 37px 4vw;
     border-radius: 10px;
 
     @media screen and (max-width: 1024px) {
@@ -154,7 +154,7 @@ header {
     }
 
     @media screen and (max-width: 782px) {
-      padding: 40px 20px 18px 18px;
+      padding: 40px 4vw 18px 4vw;
       width: 90%;
       max-width: 500px;
       text-align: center;
@@ -163,24 +163,22 @@ header {
     h4 {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
-      font-size: 16px;
+      font-size: clamp(12px, 4vw, 14px);
       margin-top: 0;
 
       @media screen and (max-width: 782px) {
         font-weight: 500;
-        font-size: 12px;
       }
     }
 
     h1 {
       font-family: "Poppins", sans-serif;
       font-weight: 700;
-      font-size: 48px;
+      font-size: clamp(24px, 5vw, 48px);
       color: var(--gold);
 
       @media screen and (max-width: 782px) {
         font-weight: 600;
-        font-size: 36px;
         margin-bottom: 15px;
       }
     }
@@ -188,12 +186,11 @@ header {
     p {
       font-family: "Poppins", sans-serif;
       font-weight: 500;
-      font-size: 18px;
+      font-size: clamp(12px, 4vw, 18px);
       margin-bottom: 40px;
 
       @media screen and (max-width: 782px) {
         font-weight: 400;
-        font-size: 14px;
         margin-bottom: 15px;
       }
     }
@@ -206,7 +203,7 @@ header {
       border: none;
       font-weight: 700;
       cursor: pointer;
-      font-family: "Popins", sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 16px;
       line-height: 1.5;
 
@@ -230,13 +227,12 @@ main {
         h1 {
           font-family: "Poppins", sans-serif;
           font-weight: 700;
-          font-size: 32px;
+          font-size: clamp(26px, 4vw, 32px);
           margin: 57px 0 0 0;
-          padding: 0 0 0 0;
+          padding: 0;
 
           @media screen and (max-width: 782px) {
             font-weight: 600;
-            font-size: 26px;
             margin-top: 30px;
           }
         }
@@ -244,13 +240,12 @@ main {
         p {
           color: #666666;
           font-weight: 400;
-          font-size: 20px;
+          font-size: clamp(16px, 5vw, 20px);
           margin: 0;
           padding: 0;
 
           @media screen and (max-width: 782px) {
             font-weight: 300;
-            font-size: 20px;
           }
         }
       }
@@ -261,7 +256,7 @@ main {
         gap: 20px;
         margin-top: 63px;
         text-align: center;
-        font-size: 24px;
+        font-size: clamp(20px, 5vw, 24px);
         font-weight: 600;
         font-family: "Poppins", sans-serif;
 
@@ -270,7 +265,6 @@ main {
           flex-wrap: wrap;
           gap: 15px;
           font-weight: 500;
-          font-size: 20;
         }
 
         img {
@@ -287,7 +281,7 @@ main {
       margin-top: 56px;
       font-family: "Popins", sans-serif;
       font-weight: 700;
-      font-size: 40px;
+      font-size: clamp(26px, 5vw, 40px);
       line-height: 1.2;
     }
 
@@ -316,12 +310,10 @@ main {
 
       @media screen and (max-width: 800px) {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
       }
 
       @media screen and (max-width: 535px) {
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
       }
 
       h3 {
@@ -330,7 +322,7 @@ main {
         padding-left: 16px;
         font-family: "Popins", sans-serif;
         font-weight: 600;
-        font-size: 24px;
+        font-size: clamp(18px, 4vw, 24px);
         line-height: 1.2;
       }
 
@@ -431,23 +423,15 @@ main {
         margin: 0;
         font-family: "Popins", sans-serif;
         font-weight: 500;
-        font-size: 16px;
+        font-size: clamp(13px, 5vw, 16px);
         color: #898989;
-
-        @media screen and (max-width: 1126px) {
-          font-size: 13px;
-        }
       }
 
       del {
-        font-size: 16px;
+        font-size: clamp(13px, 5vw, 16px);
         color: #b0b0b0;
         font-weight: 400;
         margin-left: 15px;
-
-        @media screen and (max-width: 1126px) {
-          font-size: 13px;
-        }
       }
 
       .price {
@@ -456,11 +440,9 @@ main {
         color: black;
         font-family: "Popins", sans-serif;
         font-weight: 600;
-        font-size: 20px;
-
-        @media screen and (max-width: 1126px) {
-          font-size: 15px;
-        }
+        font-size: clamp(15px, 5vw, 20px);
+        display: flex;
+        align-items: center;
       }
 
       .product-price {
@@ -539,37 +521,23 @@ main {
       }
       h1 {
         font-family: "Popins", sans-serif;
-        font-weight: 700;
-        font-size: 40px;
+        font-weight: clamp(600, 5vw, 700);
+        font-size: clamp(20px, 5vw, 40px);
         line-height: 1.2;
         margin: 0%;
         padding: 0%;
-
-        @media screen and (max-width: 494px) {
-          font-weight: 600;
-          font-size: 24px;
-        }
-        @media screen and (max-width: 371px) {
-          font-weight: 600;
-          font-size: 20px;
-        }
       }
 
       p {
         font-family: "Popins", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
+        font-weight: clamp(400, 5vw, 500);
+        font-size: clamp(10px, 5vw, 16px);
         line-height: 1.5;
         color: #616161;
         margin: 0%;
         padding: 0%;
         padding-top: 7px;
         padding-bottom: 25px;
-
-        @media screen and (max-width: 494px) {
-          font-weight: 400;
-          font-size: 10px;
-        }
       }
 
       button {
@@ -582,13 +550,11 @@ main {
         cursor: pointer;
 
         font-family: "Popins", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
+        font-weight: clamp(400, 5vw, 600);
+        font-size: clamp(12px, 5vw, 16px);
         line-height: 1.5;
 
         @media screen and (max-width: 494px) {
-          font-weight: 400;
-          font-size: 12px;
           width: 120px;
           height: 36px;
         }
@@ -778,26 +744,18 @@ footer {
       p {
         font-family: "Popins", sans-serif;
         font-weight: 600;
-        font-size: 20px;
+        font-size: clamp(18px, 5vw, 20px);
         padding: 0%;
         margin: 0;
         color: #616161;
-
-        @media screen and (max-width: 610px) {
-          font-size: 18px;
-        }
       }
 
       h1 {
         margin: 8px auto;
         font-family: "Popins", sans-serif;
         font-weight: 700;
-        font-size: 40px;
+        font-size: clamp(32px, 5vw, 40px);
         color: #3a3a3a;
-
-        @media screen and (max-width: 610px) {
-          font-size: 32px;
-        }
       }
     }
 
@@ -869,13 +827,9 @@ footer {
   .footer-section-2 {
     display: flex;
     flex-wrap: wrap;
-    padding: 48px 100px 30px 100px;
+    padding: 48px 8vw 30px 8vw;
     justify-content: space-between;
     gap: 40px;
-
-    @media screen and (max-width: 1024px) {
-      padding: 40px 30px;
-    }
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -906,15 +860,10 @@ footer {
     .right-section {
       display: flex;
       flex-wrap: wrap;
-      gap: 100px;
-
-      @media screen and (max-width: 1024px) {
-        gap: 50px;
-      }
+      gap: clamp(40px, 5vw, 100px);
 
       @media screen and (max-width: 768px) {
         flex-direction: column;
-        gap: 40px;
       }
 
       .links,

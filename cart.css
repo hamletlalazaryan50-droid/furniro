@@ -151,16 +151,12 @@ header {
 
       .product {
         font-family: "Poppins", sans-serif;
-        font-size: 48px;
+        font-size: clamp(36px, 5vw, 48px);
         font-weight: 500;
         margin: 0;
         color: black;
         display: flex;
         width: 100%;
-
-        @media screen and (max-width: 600px) {
-          font-size: 36px;
-        }
       }
 
       p:last-child {
@@ -242,11 +238,10 @@ main {
       max-width: 817px;
       margin-top: 55px;
       justify-content: space-between;
-      gap: 80px;
+      gap: clamp(40px, 5vw, 80px);
 
       @media screen and (max-width: 727px) {
         max-width: 100%;
-        gap: 40px;
       }
 
       @media screen and (max-width: 643px) {
@@ -339,12 +334,8 @@ main {
     .cart-totals {
       display: flex;
       flex-direction: column;
-      gap: 45px;
+      gap: clamp(20px, 1vw, 45px);
       align-items: center;
-
-      @media screen and (max-width: 1333px) {
-        gap: 20px;
-      }
 
       h3 {
         align-items: center;
@@ -358,11 +349,8 @@ main {
       .total {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: clamp(10px, 5vw, 25px);
 
-        @media screen and (max-width: 1333px) {
-          gap: 10px;
-        }
         p {
           display: flex;
           gap: 60px;
@@ -458,13 +446,9 @@ footer {
   .shop-footer-section-2 {
     display: flex;
     flex-wrap: wrap;
-    padding: 48px 100px 30px 100px;
+    padding: 48px 8vw 30px 8vw;
     justify-content: space-between;
     gap: 40px;
-
-    @media screen and (max-width: 1024px) {
-      padding: 40px 30px;
-    }
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -495,15 +479,10 @@ footer {
     .right-section {
       display: flex;
       flex-wrap: wrap;
-      gap: 100px;
-
-      @media screen and (max-width: 1024px) {
-        gap: 50px;
-      }
+      gap: clamp(40px, 5vw, 100px);
 
       @media screen and (max-width: 768px) {
         flex-direction: column;
-        gap: 40px;
       }
 
       .links,
