@@ -311,33 +311,10 @@ nav {
       width: 100%;
       height: 100%;
       background-color: rgba(58, 58, 58, 0.72);
+      opacity: 1;
+      visibility: visible;
 
-      div {
-        display: flex;
-        align-items: center;
-        gap: 11px;
-        margin-top: 24px;
-
-        svg {
-          fill: #ffffff;
-          cursor: pointer;
-        }
-
-        span {
-          color: #ffffff;
-          font-family: "Popins", sans-serif;
-          font-weight: 600;
-          font-size: 16px;
-          cursor: pointer;
-
-          a {
-            text-decoration: none;
-            color: white;
-          }
-        }
-      }
-
-      button {
+      .main-cart-btn {
         display: flex;
         width: 202px;
         height: 48px;
@@ -348,7 +325,36 @@ nav {
         font-family: "Popins", sans-serif;
         font-weight: 600;
         font-size: 16px;
+        text-decoration: none;
         cursor: pointer;
+      }
+      .action-buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 24px;
+      }
+
+      .action-btn {
+        background: none;
+        border: none;
+        padding: 0;
+        color: #ffffff;
+        font-family: "Popins", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        width: auto;
+        height: auto;
+        margin: 0;
+      }
+
+      .action-btn svg {
+        fill: #ffffff;
       }
     }
 
