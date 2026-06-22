@@ -130,7 +130,7 @@ header {
   align-items: center;
   overflow: hidden;
 
-  .header-section-1 {
+  .blog_header-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +187,7 @@ main {
     padding: 0;
   }
 
-  .body {
+  .blog__main_body {
     display: flex;
     gap: 71px;
 
@@ -209,7 +209,7 @@ main {
     }
   }
 
-  .left-section {
+  .blog__main_left-section {
     display: flex;
     flex-direction: column;
     gap: 54px;
@@ -348,7 +348,7 @@ main {
     }
   }
 
-  .right-section {
+  .blog__main_right-section {
     @media screen and (max-width: 1388px) {
       display: flex;
       align-items: center;
@@ -465,7 +465,7 @@ main {
     }
   }
 
-  .btns {
+  .blog__main_btns {
     display: flex;
     margin-top: 55px;
     justify-content: center;
@@ -527,7 +527,7 @@ main {
 
 footer {
   overflow: hidden;
-  .shop-footer-section-1 {
+  .blog__footer-section-1 {
     background-color: #faf3ea;
     margin-top: 83px;
     min-height: 270px;
@@ -566,7 +566,7 @@ footer {
     }
   }
 
-  .shop-footer-section-2 {
+  .blog__footer-section-2 {
     display: flex;
     flex-wrap: wrap;
     padding: 48px 8vw 30px 8vw;
@@ -579,7 +579,7 @@ footer {
       gap: 40px;
     }
 
-    .left-section {
+    .blog__footer_left-section {
       max-width: 300px;
 
       h2 {
@@ -599,7 +599,7 @@ footer {
       }
     }
 
-    .right-section {
+    .blog__footer_right-section {
       display: flex;
       flex-wrap: wrap;
       gap: clamp(40px, 5vw, 100px);

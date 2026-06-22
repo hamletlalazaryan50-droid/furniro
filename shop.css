@@ -23,7 +23,7 @@ nav {
   }
 }
 
-.shop-header {
+.shop__header {
   min-height: 316px;
   position: relative;
   display: flex;
@@ -31,7 +31,7 @@ nav {
   align-items: center;
   overflow: hidden;
 
-  .header-section-1 {
+  .shop__header-section-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@ nav {
   }
 }
 
-.header-section-2 {
+.shop__header-section-2 {
   background-color: var(--header-container-color);
   display: flex;
   justify-content: space-between;
@@ -98,7 +98,7 @@ nav {
     padding: 20px;
   }
 
-  .left-section {
+  .header_left-section {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -126,7 +126,7 @@ nav {
     }
   }
 
-  .right-section {
+  .header_right-section {
     display: flex;
     gap: 29px;
     align-items: center;
@@ -198,7 +198,7 @@ nav {
   }
 }
 
-.shop-main {
+.shop__main {
   overflow: hidden;
   h1 {
     text-align: center;
@@ -209,7 +209,7 @@ nav {
     line-height: 1.2;
   }
 
-  .products {
+  .shop__main_products {
     margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -377,7 +377,7 @@ nav {
     }
   }
 
-  .main-btns {
+  .shop__main-btns {
     display: flex;
     gap: 38px;
     justify-content: center;
@@ -431,9 +431,9 @@ nav {
   }
 }
 
-.shop-footer {
+.shop__footer {
   overflow: hidden;
-  .shop-footer-section-1 {
+  .shop__footer-section-1 {
     background-color: #faf3ea;
     margin-top: 83px;
     min-height: 270px;
@@ -472,7 +472,7 @@ nav {
     }
   }
 
-  .shop-footer-section-2 {
+  .shop__footer-section-2 {
     display: flex;
     flex-wrap: wrap;
     padding: 48px 8vw 30px 8vw;
@@ -485,7 +485,7 @@ nav {
       gap: 40px;
     }
 
-    .left-section {
+    .shop__footer_left-section {
       max-width: 300px;
 
       h2 {
@@ -505,7 +505,7 @@ nav {
       }
     }
 
-    .right-section {
+    .shop__footer_right-section {
       display: flex;
       flex-wrap: wrap;
       gap: clamp(40px, 5vw, 100px);

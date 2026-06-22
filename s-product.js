@@ -1,7 +1,7 @@
 const cartIcon = document.querySelector("#cart-icon");
 const closeCart = document.querySelector("#close-cart");
-const shoppingCart = document.querySelector(".shopping-cart");
-const cartOverlay = document.querySelector(".cart-overlay");
+const shoppingCart = document.querySelector(".s-product__shopping-cart");
+const cartOverlay = document.querySelector(".s-product__cart-overlay");
 const body = document.querySelector("body");
 
 cartIcon.addEventListener("click", () => {

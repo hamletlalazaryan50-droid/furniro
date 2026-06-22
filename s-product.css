@@ -125,7 +125,7 @@ nav {
 header {
   overflow: hidden;
 
-  .header-section-1 {
+  .s-product__header-section-1 {
     display: flex;
     background-color: #f9f1e7;
     min-height: 100px;
@@ -156,7 +156,7 @@ header {
     }
   }
 
-  .header-section-2 {
+  .s-product__header-section-2 {
     display: flex;
     gap: 50px;
     margin: 35px 5%;
@@ -176,7 +176,7 @@ header {
       gap: 30px;
     }
 
-    .left-section {
+    .header_section-2_left-section {
       display: flex;
       gap: clamp(15px, 5vw, 32px);
       flex: 1;
@@ -247,7 +247,7 @@ header {
       }
     }
 
-    .right-section {
+    .header_section-2_right-section {
       flex: 1;
       h1 {
         font-family: "Poppins", sans-serif;
@@ -474,7 +474,7 @@ header {
 
 main {
   overflow: hidden;
-  .main-1 {
+  .s-product__main-1 {
     .h1 {
       display: flex;
       align-items: center;
@@ -553,7 +553,7 @@ main {
     }
   }
 
-  .main-2 {
+  .s-product__main-2 {
     h1 {
       text-align: center;
       margin-top: 56px;
@@ -752,7 +752,7 @@ main {
 }
 
 footer {
-  .footer {
+  .s-product__footer {
     display: flex;
     flex-wrap: wrap;
     padding: 48px 100px 30px 100px;
@@ -774,7 +774,7 @@ footer {
       gap: 40px;
     }
 
-    .left-section {
+    .s-product__footer_left-section {
       max-width: 300px;
 
       h2 {
@@ -794,7 +794,7 @@ footer {
       }
     }
 
-    .right-section {
+    .s-product__footer_right-section {
       display: flex;
       flex-wrap: wrap;
       gap: clamp(40px, 5vw, 100px);
@@ -918,7 +918,8 @@ footer {
     }
   }
 }
-.shopping-cart {
+
+.s-product__shopping-cart {
   position: fixed;
   top: 0;
   right: -500px;
@@ -1098,11 +1099,11 @@ footer {
   }
 }
 
-.shopping-cart.active {
+.s-product__shopping-cart.active {
   right: 0;
 }
 
-.cart-overlay {
+.s-product__cart-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1115,12 +1116,12 @@ footer {
   transition: 0.3s ease;
 }
 
-.cart-overlay.active {
+.s-product__cart-overlay.active {
   opacity: 1;
   visibility: visible;
 }
 
-.shopping-cart {
+.s-product__shopping-cart {
   .btns {
     a {
       text-decoration: none;

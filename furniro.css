@@ -226,7 +226,7 @@ header {
 main {
   .main-1 {
     .container {
-      .main-1-text {
+      .main-1__text {
         text-align: center;
         margin: 0;
         padding: 0;
@@ -257,7 +257,7 @@ main {
         }
       }
 
-      .images {
+      .main-1__images {
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -292,7 +292,7 @@ main {
       line-height: 1.2;
     }
 
-    .products {
+    .main-2__products {
       margin-top: 32px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -464,7 +464,7 @@ main {
       }
     }
 
-    button {
+    .main-2__button {
       display: block;
       margin: 38px auto 0 auto;
       width: 248px;
@@ -505,7 +505,7 @@ main {
       justify-content: center;
       text-align: center;
     }
-    .main-3-text {
+    .main-3__text {
       padding-top: 223px;
       padding-left: 100px;
       min-width: 500px;
@@ -547,7 +547,7 @@ main {
         padding-bottom: 25px;
       }
 
-      button {
+      .main-3__btn {
         width: 176px;
         height: 48px;
         background-color: var(--gold);
@@ -568,7 +568,7 @@ main {
       }
     }
 
-    .picture-with-description {
+    .picture_with_description {
       position: relative;
       flex-shrink: 0;
       width: 404px;
@@ -641,7 +641,7 @@ main {
       }
     }
 
-    .picture-with-slides {
+    .picture_with_slides {
       position: relative;
       width: 372px;
       flex-shrink: 0;
@@ -717,7 +717,7 @@ main {
       }
     }
 
-    .right-picture {
+    .main-3_right_picture {
       display: flex;
       height: 486px;
       margin-top: 44px;
