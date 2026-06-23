@@ -179,13 +179,13 @@
 
     <main>
       <div class="p-comparison__main-1">
-        <div class="text">
+        <div class="p-comparison__text">
           <p class="title">Go to Product page for more Products</p>
           <p class="view">View More</p>
         </div>
 
-        <div class="sofas">
-          <div class="sofa-1">
+        <div class="p-comparison__sofas">
+          <div class="p-comparison__sofa-1">
             <div class="picture">
               <a href="s-product.html">
                 <img src="images/sofa-1.png" alt="asgard-sofa"
@@ -280,7 +280,7 @@
               </div>
             </div>
           </div>
-          <div class="sofa-2">
+          <div class="p-comparison__sofa-2">
             <div class="picture">
               <a href="s-product.html">
                 <img src="images/sofa-2-2.png" alt="Outdoor Sofa Set"
@@ -524,7 +524,7 @@
     </main>
 
     <footer>
-      <div class="p-comparison__footer-section-1">
+      <div class="footer__section-1">
         <div class="footer__items">
           <div class="footer__item">
             <svg
@@ -603,13 +603,13 @@
         </div>
       </div>
 
-      <div class="p-comparison__footer-section-2">
-        <div class="p-comparison__footer_left-section">
+      <div class="footer__section-2">
+        <div class="footer__left-section">
           <h2>Funiro.</h2>
           <p>400 University Drive Suite 200 Coral Gables, <br />FL 33134 USA</p>
         </div>
 
-        <div class="p-comparison__footer_right-section">
+        <div class="footer__right-section">
           <div class="footer__links">
             <p>Links</p>
             <ul>
@@ -620,7 +620,7 @@
             </ul>
           </div>
 
-          <div class="footer__Help">
+          <div class="footer__help">
             <p>Help</p>
             <ul>
               <li><a href="#">Payment Options</a></li>
@@ -629,19 +629,22 @@
             </ul>
           </div>
 
-          <div class="footer__Newsletter">
+          <div class="footer__newsletter">
             <p>Newsletter</p>
-            <form class="newsletter-form">
-              <label for="newsletter-email" class="text"
+            <form class="footer__newsletter-form">
+              <label for="newsletter-email" class="footer__text"
                 >Enter Your Email Address</label
               >
               <input
+                class="footer__input"
                 type="email"
                 id="newsletter-email"
                 placeholder="Enter Your Email Address"
                 required
               />
-              <button type="submit">SUBSCRIBE</button>
+              <button type="submit" class="footer__submit-btn">
+                SUBSCRIBE
+              </button>
             </form>
           </div>
         </div>

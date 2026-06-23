@@ -187,7 +187,7 @@
 
         <div class="header_section-2_right-section">
           <h1>Asgaard sofa</h1>
-          <p class="price">Rs. 250,000.00</p>
+          <p class="s-product__price">Rs. 250,000.00</p>
 
           <div class="review">
             <div class="stars">
@@ -270,7 +270,7 @@
             <p>5 Customer Review</p>
           </div>
 
-          <p class="desc">
+          <p class="s-product__desc">
             Setting the bar as one of the loudest speakers in its class, the
             Kilburn is a compact, stout-hearted hero with a well-balanced audio
             which boasts a clear midrange and extended highs for a sound.
@@ -491,13 +491,13 @@
     </main>
 
     <footer>
-      <div class="s-product__footer">
-        <div class="s-product__footer_left-section">
+      <div class="footer">
+        <div class="footer__left-section">
           <h2>Funiro.</h2>
           <p>400 University Drive Suite 200 Coral Gables, <br />FL 33134 USA</p>
         </div>
 
-        <div class="s-product__footer_right-section">
+        <div class="footer__right-section">
           <div class="footer__links">
             <p>Links</p>
             <ul>
@@ -508,7 +508,7 @@
             </ul>
           </div>
 
-          <div class="footer__Help">
+          <div class="footer__help">
             <p>Help</p>
             <ul>
               <li><a href="#">Payment Options</a></li>
@@ -517,19 +517,22 @@
             </ul>
           </div>
 
-          <div class="footer__Newsletter">
+          <div class="footer__newsletter">
             <p>Newsletter</p>
-            <form class="newsletter-form">
-              <label for="newsletter-email" class="text"
+            <form class="footer__newsletter-form">
+              <label for="newsletter-email" class="footer__text"
                 >Enter Your Email Address</label
               >
               <input
+                class="footer__input"
                 type="email"
                 id="newsletter-email"
                 placeholder="Enter Your Email Address"
                 required
               />
-              <button type="submit">SUBSCRIBE</button>
+              <button type="submit" class="footer__submit-btn">
+                SUBSCRIBE
+              </button>
             </form>
           </div>
         </div>
@@ -655,10 +658,12 @@
         <line y1="0.5" x2="417" y2="0.5" stroke="#D9D9D9" />
       </svg>
 
-      <div class="btns">
-        <button class="cart"><a href="cart.html">Cart</a></button>
-        <button class="checkout"><a href="checkout.html">Checkout</a></button>
-        <button class="comparison">
+      <div class="s-product__btns">
+        <button class="s-product__cart"><a href="cart.html">Cart</a></button>
+        <button class="s-product__checkout">
+          <a href="checkout.html">Checkout</a>
+        </button>
+        <button class="s-product__comparison">
           <a href="p-comparison.html">Comparison</a>
         </button>
       </div>

@@ -257,7 +257,7 @@ header {
         padding: 0;
       }
 
-      .price {
+      .s-product__price {
         font-family: "Poppins", sans-serif;
         font-size: clamp(20px, 5vw, 24px);
         font-weight: 500;
@@ -288,7 +288,7 @@ header {
         }
       }
 
-      .desc {
+      .s-product__desc {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -752,7 +752,7 @@ main {
 }
 
 footer {
-  .s-product__footer {
+  .footer {
     display: flex;
     flex-wrap: wrap;
     padding: 48px 100px 30px 100px;
@@ -774,7 +774,7 @@ footer {
       gap: 40px;
     }
 
-    .s-product__footer_left-section {
+    .footer__left-section {
       max-width: 300px;
 
       h2 {
@@ -794,7 +794,7 @@ footer {
       }
     }
 
-    .s-product__footer_right-section {
+    .footer__right-section {
       display: flex;
       flex-wrap: wrap;
       gap: clamp(40px, 5vw, 100px);
@@ -804,7 +804,7 @@ footer {
       }
 
       .footer__links,
-      .footer__Help {
+      .footer__help {
         display: flex;
         flex-direction: column;
 
@@ -837,7 +837,7 @@ footer {
         }
       }
 
-      .footer__Newsletter {
+      .footer__newsletter {
         font-family: "Popins", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -847,11 +847,11 @@ footer {
           margin-bottom: 30px;
           margin-top: 0;
         }
-        .newsletter-form {
+        .footer__newsletter-form {
           display: flex;
           align-items: center;
         }
-        .text {
+        .footer__text {
           position: absolute;
           width: 1px;
           height: 1px;
@@ -861,7 +861,7 @@ footer {
           clip: rect(0, 0, 0, 0);
           border: 0;
         }
-        input {
+        .footer__input {
           border: none;
           border-bottom: 1px solid black;
           outline: none;
@@ -870,7 +870,7 @@ footer {
           font-family: "Popins", sans-serif;
           font-size: 14px;
         }
-        button {
+        .footer__submit-btn {
           background: none;
           border: none;
           padding: 0;
@@ -883,12 +883,12 @@ footer {
         }
 
         @media screen and (max-width: 480px) {
-          .newsletter-form {
+          .footer__newsletter-form {
             flex-direction: column;
             align-items: flex-start;
             gap: 20px;
           }
-          input {
+          .footer__input {
             width: 100%;
             margin-right: 0;
           }
@@ -1058,13 +1058,13 @@ footer {
     }
   }
 
-  .btns {
+  .s-product__btns {
     display: flex;
     margin-top: 26px;
     gap: 15px;
     justify-content: center;
 
-    .cart {
+    .s-product__cart {
       width: 87px;
       height: 30px;
       border-radius: 50px;
@@ -1075,7 +1075,7 @@ footer {
       cursor: pointer;
     }
 
-    .checkout {
+    .s-product__checkout {
       width: 118px;
       height: 30px;
       border-radius: 50px;
@@ -1086,7 +1086,7 @@ footer {
       cursor: pointer;
     }
 
-    .comparison {
+    .s-product__comparison {
       width: 135px;
       height: 30px;
       border-radius: 50px;
@@ -1122,7 +1122,7 @@ footer {
 }
 
 .s-product__shopping-cart {
-  .btns {
+  .s-product__btns {
     a {
       text-decoration: none;
       color: #000000;

@@ -196,7 +196,7 @@ main {
       align-items: center;
     }
 
-    .text {
+    .p-comparison__text {
       @media screen and (max-width: 1057px) {
         text-align: center;
       }
@@ -218,7 +218,7 @@ main {
       }
     }
 
-    .sofas {
+    .p-comparison__sofas {
       display: flex;
       gap: clamp(25px, 5vw, 49px);
       align-items: center;
@@ -228,7 +228,7 @@ main {
         text-align: center;
       }
 
-      .sofa-1 {
+      .p-comparison__sofa-1 {
         .picture {
           width: 280px;
           height: 177px;
@@ -286,7 +286,7 @@ main {
           }
         }
       }
-      .sofa-2 {
+      .p-comparison__sofa-2 {
         .picture {
           width: 280px;
           height: 177px;
@@ -685,7 +685,7 @@ main {
 
 footer {
   overflow: hidden;
-  .p-comparison__footer-section-1 {
+  .footer__section-1 {
     background-color: #faf3ea;
     margin-top: 83px;
     min-height: 270px;
@@ -724,7 +724,7 @@ footer {
     }
   }
 
-  .p-comparison__footer-section-2 {
+  .footer__section-2 {
     display: flex;
     flex-wrap: wrap;
     padding: 48px 8vw 30px 8vw;
@@ -737,7 +737,7 @@ footer {
       gap: 40px;
     }
 
-    .p-comparison__footer_left-section {
+    .footer__left-section {
       max-width: 300px;
 
       h2 {
@@ -757,7 +757,7 @@ footer {
       }
     }
 
-    .p-comparison__footer_right-section {
+    .footer__right-section {
       display: flex;
       flex-wrap: wrap;
       gap: clamp(40px, 5vw, 100px);
@@ -767,7 +767,7 @@ footer {
       }
 
       .footer__links,
-      .footer__Help {
+      .footer__help {
         display: flex;
         flex-direction: column;
 
@@ -800,7 +800,7 @@ footer {
         }
       }
 
-      .footer__Newsletter {
+      .footer__newsletter {
         font-family: "Popins", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -810,11 +810,11 @@ footer {
           margin-bottom: 30px;
           margin-top: 0;
         }
-        .newsletter-form {
+        .footer__newsletter-form {
           display: flex;
           align-items: center;
         }
-        .text {
+        .footer__text {
           position: absolute;
           width: 1px;
           height: 1px;
@@ -824,7 +824,7 @@ footer {
           clip: rect(0, 0, 0, 0);
           border: 0;
         }
-        input {
+        .footer__input {
           border: none;
           border-bottom: 1px solid black;
           outline: none;
@@ -833,7 +833,7 @@ footer {
           font-family: "Popins", sans-serif;
           font-size: 14px;
         }
-        button {
+        .footer__submit-btn {
           background: none;
           border: none;
           padding: 0;
@@ -846,12 +846,12 @@ footer {
         }
 
         @media screen and (max-width: 480px) {
-          .newsletter-form {
+          .footer__newsletter-form {
             flex-direction: column;
             align-items: flex-start;
             gap: 20px;
           }
-          input {
+          .footer__input {
             width: 100%;
             margin-right: 0;
           }

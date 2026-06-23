@@ -98,7 +98,7 @@ nav {
     padding: 20px;
   }
 
-  .header_left-section {
+  .header__left-section {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -126,7 +126,7 @@ nav {
     }
   }
 
-  .header_right-section {
+  .header__right-section {
     display: flex;
     gap: 29px;
     align-items: center;
@@ -209,7 +209,7 @@ nav {
     line-height: 1.2;
   }
 
-  .shop__main_products {
+  .shop__products {
     margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -265,7 +265,7 @@ nav {
       }
     }
 
-    .discount {
+    .shop__discount {
       position: absolute;
       top: 24px;
       right: 25px;
@@ -279,7 +279,7 @@ nav {
       color: white;
     }
 
-    .overlay {
+    .shop__overlay {
       position: absolute;
       display: flex;
       align-items: center;
@@ -377,14 +377,14 @@ nav {
     }
   }
 
-  .shop__main-btns {
+  .shop__btns {
     display: flex;
     gap: 38px;
     justify-content: center;
     margin-top: 70px;
     flex-wrap: wrap;
 
-    .btn-main-1 {
+    .shop__btn-1 {
       button {
         width: 60px;
         height: 60px;
@@ -399,7 +399,7 @@ nav {
       }
     }
 
-    .btn-main {
+    .shop__btn-main {
       button {
         width: 60px;
         height: 60px;
@@ -414,7 +414,7 @@ nav {
       }
     }
 
-    .btn-next {
+    .shop__btn-next {
       button {
         width: 98px;
         height: 60px;
@@ -431,9 +431,9 @@ nav {
   }
 }
 
-.shop__footer {
+.footer {
   overflow: hidden;
-  .shop__footer-section-1 {
+  .footer__section-1 {
     background-color: #faf3ea;
     margin-top: 83px;
     min-height: 270px;
@@ -472,7 +472,7 @@ nav {
     }
   }
 
-  .shop__footer-section-2 {
+  .footer__section-2 {
     display: flex;
     flex-wrap: wrap;
     padding: 48px 8vw 30px 8vw;
@@ -485,7 +485,7 @@ nav {
       gap: 40px;
     }
 
-    .shop__footer_left-section {
+    .footer__left-section {
       max-width: 300px;
 
       h2 {
@@ -505,7 +505,7 @@ nav {
       }
     }
 
-    .shop__footer_right-section {
+    .footer__right-section {
       display: flex;
       flex-wrap: wrap;
       gap: clamp(40px, 5vw, 100px);
@@ -515,7 +515,7 @@ nav {
       }
 
       .footer__links,
-      .footer__Help {
+      .footer__help {
         display: flex;
         flex-direction: column;
 
@@ -548,7 +548,7 @@ nav {
         }
       }
 
-      .footer__Newsletter {
+      .footer__newsletter {
         font-family: "Popins", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -558,11 +558,11 @@ nav {
           margin-bottom: 30px;
           margin-top: 0;
         }
-        .newsletter-form {
+        .footer__newsletter-form {
           display: flex;
           align-items: center;
         }
-        .text {
+        .footer__text {
           position: absolute;
           width: 1px;
           height: 1px;
@@ -572,7 +572,7 @@ nav {
           clip: rect(0, 0, 0, 0);
           border: 0;
         }
-        input {
+        .footer__input {
           border: none;
           border-bottom: 1px solid black;
           outline: none;
@@ -581,7 +581,7 @@ nav {
           font-family: "Popins", sans-serif;
           font-size: 14px;
         }
-        button {
+        .footer__submit-btn {
           background: none;
           border: none;
           padding: 0;
@@ -594,12 +594,12 @@ nav {
         }
 
         @media screen and (max-width: 480px) {
-          .newsletter-form {
+          .footer__newsletter-form {
             flex-direction: column;
             align-items: flex-start;
             gap: 20px;
           }
-          input {
+          .footer__input {
             width: 100%;
             margin-right: 0;
           }
