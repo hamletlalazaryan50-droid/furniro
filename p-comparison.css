@@ -66,6 +66,12 @@ nav {
       justify-content: flex-end;
       box-sizing: border-box;
 
+      .nav__icon-btn:focus {
+        outline: 3px solid var(--gold);
+        outline-offset: 2px;
+        box-shadow: 0 0 0 3px var(--white);
+      }
+
       .nav__icon-btn {
         background: none;
         border: none;
