@@ -31,7 +31,7 @@ nav {
       text-decoration: none;
     }
 
-    .nav-logo {
+    .nav__logo {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -47,7 +47,7 @@ nav {
         text-decoration: none;
       }
 
-      .nav-logo-name {
+      .nav__logo-name {
         color: black;
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
@@ -58,7 +58,7 @@ nav {
         }
       }
     }
-    .nav-btns {
+    .nav__btns {
       display: flex;
       gap: 45px;
       align-items: center;
@@ -66,13 +66,13 @@ nav {
       justify-content: flex-end;
       box-sizing: border-box;
 
-      .icon-btn {
+      .nav__icon-btn {
         background: none;
         border: none;
         outline: none;
       }
 
-      .mobile-btn {
+      .nav__mobile-btn {
         display: none;
       }
       svg {
@@ -86,7 +86,7 @@ nav {
         button {
           display: none;
         }
-        .mobile-btn {
+        .nav__mobile-btn {
           display: flex;
           background: none;
           border: none;
@@ -418,14 +418,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    .footer-items {
+    .footer__items {
       display: flex;
       gap: 65px;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
 
-      .item {
+      .footer__item {
         display: flex;
         align-items: center;
         gap: 13px;
@@ -491,8 +491,8 @@ footer {
         flex-direction: column;
       }
 
-      .links,
-      .Help {
+      .footer__links,
+      .footer__Help {
         display: flex;
         flex-direction: column;
 
@@ -525,7 +525,7 @@ footer {
         }
       }
 
-      .Newsletter {
+      .footer__Newsletter {
         font-family: "Popins", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -584,7 +584,7 @@ footer {
       }
     }
 
-    .rights {
+    .footer__rights {
       width: 100%;
       margin-top: 30px;
 

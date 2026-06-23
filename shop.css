@@ -441,14 +441,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    .footer-items {
+    .footer__items {
       display: flex;
       gap: 65px;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
 
-      .item {
+      .footer__item {
         display: flex;
         align-items: center;
         gap: 13px;
@@ -514,8 +514,8 @@ nav {
         flex-direction: column;
       }
 
-      .links,
-      .Help {
+      .footer__links,
+      .footer__Help {
         display: flex;
         flex-direction: column;
 
@@ -548,7 +548,7 @@ nav {
         }
       }
 
-      .Newsletter {
+      .footer__Newsletter {
         font-family: "Popins", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -607,7 +607,7 @@ nav {
       }
     }
 
-    .rights {
+    .footer__rights {
       width: 100%;
       margin-top: 30px;
 
